@@ -15,7 +15,7 @@ namespace Vidly.Controllers
         }
 
         public ActionResult Details(int id)
-        { //customewr
+        {
             var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
 
             if (customer == null)
