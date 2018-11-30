@@ -1,14 +1,14 @@
-﻿using Microsoft.Owin;
-using Owin;
-
-[assembly: OwinStartupAttribute(typeof(Vidly.Startup))]
-namespace Vidly
+public enum PavementType= {cash,CreditCard};
+public class Employee
 {
-    public partial class Startup
+    public PavementType pay(Money money)
     {
-        public void Configuration(IAppBuilder app)
+        if(PavementType==PavementType.cash)
         {
-            ConfigureAuth(app);
+            //code for cash
+        }else
+        {
+            //code for creditcard
         }
     }
 }
